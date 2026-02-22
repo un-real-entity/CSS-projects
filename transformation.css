@@ -1,0 +1,31 @@
+body{
+  margin: 0;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border: 2px solid;
+    
+}
+#box1{
+    background-color: hsl(0, 100%, 65%);
+    transform: translateX(150px) translateY(150px) rotate(45deg);
+
+}
+#box2{
+    background-color: hsl(253, 97%, 61%);
+    transform: translateX(150px) translateY(150px) rotate(30deg);
+
+}
+#box3{
+    background-color: hsl(118, 100%, 65%);
+    transform: translateX(150px) translateY(150px) rotate(15deg);
+
+}
+#box4{
+    background-color: hsl(59, 100%, 65%);
+    transform: translateX(150px) translateY(150px);
+
+}
