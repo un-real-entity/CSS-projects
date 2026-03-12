@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbg:#f4f4f4;
+    --bg:#ffffff;
+    --text:#111;
+    --card:#f4f4f4;
+    --accent:#5a6cff;
+}
+#theme-toggle{
+    display:none;
+}
+
+#theme-toggle:checked ~ .page{
+    --navbg:#1e293b;
+    --bg:#0f172a;
+    --text:#ffffff;
+    --card:#1e293b;
+    --accent:#4d8bff;
+}
+
+
+.page{
+    background:var(--bg);
+    color:var(--text);
+    transition:0.4s;
+    min-height:100vh;
+ }
+
+ header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    position:sticky;
+    top:0;
+    background:var(--navbg);
+    border-radius: 20px;
+ }
+
+ nav a{
+    margin:0 10px;
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+
+ }
+ nav a:hover{
+    font-size: 1.1em;
+    background:var(--bg);
+    transition: 0.3s;
+ }
+ .toggle{
+    background:var(--accent);
+    padding:8px 15px;
+    border-radius:20px;
+    cursor:pointer;
+    color:white;
+ }
+ .toggle:hover{
+  background: hsl(219, 53%, 41%);
+  transform:scale(1.05);
+ }
+ .hero{
+    text-align:center;
+    padding:120px 20px;
+    min-height:100vh;
+ }
+ .hero h2{
+    font-size:3rem;
+    margin-bottom:10px;
+ }
+ .hero p{
+    font-size:1.2rem;
+    margin-bottom:20px;
+    color:var(--accent);
+ }
+
+ button{
+    padding:10px 20px;
+    border:none;
+    background:var(--accent);
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+    transition: 0.3s;
+ }
+
+ button:hover{
+    transform:scale(1.1);
+ }
+
+ .about{
+    text-align:center;
+    padding:80px 20px;
+    min-height:100vh;
+   
+ }
+ .about h2{
+    margin-top:100px;
+   
+ }
+ .about p{
+    margin:20px
+ }
+
+ .services{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+    padding:60px 20px;
+    min-height:100vh;
+    
+ }
+
+ .card{
+    background: var(--card);
+    padding:30px;
+    border-radius:10px;
+    width:220px;
+    height:180px;
+    text-align:center;
+    transition:0.3s;
+     margin-top:100px;
+ }
+  .card:hover{
+    transform:translateY(-10px);
+  }
+  .contact{
+    display:flex;
+    justify-content: center;
+    min-height:100vh;
+    text-align: center;
+    font-size:1.5em;
+  }
+ 
+  .contact #name{
+    margin-top:150px;
+    border:none;
+    border-radius:10px;
+    padding:10px 20px;
+    color:var(--text);
+    background:var(--card);
+    
+  }
+
+  .contact #email{
+      border:none;
+    border-radius:10px;
+    padding:10px 20px;
+    color:var(--text);
+    background:var(--card);
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+  .contact #message{
+      border:none;
+    border-radius:10px;
+    padding:10px 20px;
+    color:var(--text);
+    background:var(--card);
+  
+  }
+ .contact #submit{
+    border:none;
+    border-radius:20px;
+    padding:10px 20px;
+    margin-top:10px;
+    color:white;
+    background:var(--accent);
+    font-size:.7em;
+    transition:0.3s;
+ }
+ .contact #submit:hover{
+    background: hsl(219, 53%, 41%);
+  transform:scale(1.05);
+ }
